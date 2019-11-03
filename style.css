@@ -3,6 +3,10 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
+img-fluid {
+  width: 100%;
+}
+
 /* Navbar */
 .dropdown:hover > .dropdown-menu {
   display: block;
@@ -22,23 +26,20 @@ body {
   clip-path: ellipse();
 }
 
-.arrow {
+@media (max-width: 575px) {
+  .arrow {
   visibility: hidden;
+  }
 }
-
 
 .arrow {
   color: rgb(250, 247, 50);
-  font-size: 45px;
+  font-size: 30px;
   position: relative;
 }
 
 /* Main-Content */
-img-fluid {
-  width: 100%;
-}
 
-/* Secondary-Content */
 
 /* Footer */
 
