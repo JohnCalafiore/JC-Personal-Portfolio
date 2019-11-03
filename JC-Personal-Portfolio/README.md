@@ -16,3 +16,8 @@ Added background picture to body;
 Added web projects title;
 Added thumbnails of web projects, with subtitles and descriptions;
 Added row for future project(s);
+
+**Third Commit - 11.3.19
+Added social media title and info;
+Added about me title and info;
+Added copyright;
