@@ -21,3 +21,14 @@ Added row for future project(s);
 Added social media title and info;
 Added about me title and info;
 Added copyright;
+
+**Fourth Commit - 11.3.19 (busy day)
+Changed font style;
+Added text shadow;
+Fixed some links;
+Stacks FA social icons so that they're prettier;
+Moved nav dropdown up so the hover works better;
+Added hover colors to titles and returns;
+Converted project images to target links;
+Created and added favicon;
+Added links to Altcademy and email in about.me section;

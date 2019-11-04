@@ -10,7 +10,11 @@
     <!-- Fontawesome/Iconify -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <title>Hello, World!</title>
-    <!-- todo favicon <link rel="shortcut icon" type="image" href="./images/favicon.ico"/> -->
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
 
   </head>
 
@@ -19,7 +23,7 @@
 <!-- Navbar -->
     <nav class="navbar navbar-expand navbar-light bg-info px-auto py-0">
 <!-- todo add text shadow -->
-      <a class="navbar-brand text text-body" href="#me" id="#john">john.<b>calafiore</b></a>
+      <a class="navbar-brand text-body text-decoration-none" href="#me" id="john">john.<b>calafiore</b></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -27,7 +31,7 @@
         <p class="arrow"><i class="fas fa-long-arrow-alt-right pr-1 pt-4"></i></p>
         <span class="navbar-nav">
           <span class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text text-body pt-1" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text text-body pt-2" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               more.<b>here</b>
             </a>
             <div class="dropdown-menu dropdown-menu-right text" aria-labelledby="navbarDropdownMenuLink">
@@ -42,7 +46,7 @@
 
 <!-- Main-Content -->
 
-    <div class="container-fluid">
+    <div class="container-fluid mx-1">
     <!-- main image -->
     <!-- todo have content scroll up and hide bg image -->
       <div class="row">
@@ -54,31 +58,34 @@
     <!-- web projects -->
       <div class="row bg-warning">
         <div class="col-12 mt-2">
-          <h5 class="text-success" id="projects">web.<b>projects</b> | 
-          <a class="text-success" href="#john">back.<b>up </b><i class="fas fa-long-arrow-alt-up"></i></a></h5>
+          <h5 class="text-success" id="projects"><span class="title">web.<b>projects</b></span>
+            <a class="text-success text-decoration-none return" href="#john">
+              | back.<b>up </b><i class="fas fa-long-arrow-alt-up arrow-up"></i>
+            </a>
+          </h5>
         </div>
       </div>
-      <div class="row bg-success pt-2">
-        <div class="col-12 col-md-4">
-          <img class="img-fluid rounded" src="./images/apple-example.png" alt="mountain-top">
-          <p class="subtitle apple-example text-body mt-2">
-            My first project was to clone an older version of the Apple landing page.  <a href="https://jcalafiore-apple-clone.netlify.com/" target="_blank">You can check it out here. <i class="fas fa-external-link-square-alt"></i>
+      <div class="row bg-success pt-3">
+        <div class="col-12 col-md-4" id="apple-example">
+          <a href="https://jcalafiore-apple-clone.netlify.com/" target="_blank"><img class="img-fluid rounded" src="./images/apple-example.png" alt="mountain-top"></a>
+          <p class="subtitle text-body mt-2">
+            My first project was to clone an older version of the Apple landing page. <br>You can check it out here: <a href="https://jcalafiore-apple-clone.netlify.com/" target="_blank"> <i class="fas fa-external-link-square-alt text-warning"></i>
             </a><br> 
             <small>(HTML | CSS)</small>
           </p> 
         </div>
-        <div class="col-12 col-md-4">
-          <img class="img-fluid rounded" src="./images/newsweek-example.png" alt="mountain-top">
-          <p class="subtitle apple-example text-body mt-2">
-          My next project was to clone the Newsweek landing page. This was my introduction to responsive CSS. <a href="https://jcalafiore-newsweek-clone.netlify.com/" target="_blank">Check it out here. <i class="fas fa-external-link-square-alt"></i>
+        <div class="col-12 col-md-4" id="newsweek-example">
+          <a href="https://jcalafiore-newsweek-clone.netlify.com/" target="_blank"><img class="img-fluid rounded" src="./images/newsweek-example.png" alt="mountain-top"></a>
+          <p class="subtitle text-body mt-2">
+          My next project was to clone the Newsweek landing page. This was my introduction to responsive CSS. <br>Check it out here: <a href="https://jcalafiore-newsweek-clone.netlify.com/" target="_blank"><i class="fas fa-external-link-square-alt text-warning"></i>
           </a><br> 
           <small>(HTML | CSS)</small>
           </p> 
         </div>
-        <div class="col-12 col-md-4">
-          <img class="img-fluid rounded" src="./images/airbnb-example.png" alt="mountain-top">
+        <div class="col-12 col-md-4" id="airbnb-example">
+          <a href="https://jcalafiore-airbnb-clone.netlify.com" target="_blank"><img class="img-fluid rounded" src="./images/airbnb-example.png" alt="mountain-top"></a>
           <p class="subtitle apple-example text-body mt-2">
-          On to my third project, which was another clone of the press landing page for Airbnb, primarily using Bootstrap 4. This was intense! <a href="https://jcalafiore-airbnb-clone.netlify.com" target="_blank">You know the drill. <i class="fas fa-external-link-square-alt"></i>
+          On to my third project, which was another clone of the press landing page for Airbnb, primarily using Bootstrap 4. This was intense! <br>You know the drill (here): <a href="https://jcalafiore-airbnb-clone.netlify.com" target="_blank"><i class="fas fa-external-link-square-alt text-warning"></i>
           </a><br> 
           <small>(HTML | CSS | Bootstrap)</small>
           </p> 
@@ -86,28 +93,37 @@
       </div>
       <div class="row bg-info">
         <div class="col-12 mt-2">
-          <p class="personal-example text-center"> For my last example of my HTML/CSS course, well...you're looking at it!  Don't worry, there's more to come. <br>The next chapter is JavaScript, and I'm excited! </p>
+          <p class="personal-example text-center pt-2"> For my last example of my HTML/CSS course, well...you're looking at it!  Don't worry, there's more to come. <br>The next chapter is JavaScript, and I'm excited! </p>
         </div>
       </div>
 
     <hr class="mb-0"/>
 
     <!-- Social links/images -->
-      <div class="row bg-warning ">
+      <div class="row bg-warning">
         <div class="col-12 pt-2">
-            <h5 class="text-success" id="social">social.<b>media</b> | 
-            <a class="text-success" href="#john">back.<b>up </b><i class="fas fa-long-arrow-alt-up"></i></a></h5>
+          <h5 class="text-success" id="social"><span class="title">social.<b>media</b></span> 
+            <a class="text-success text-decoration-none return" href="#john">
+              | back.<b>up </b><i class="fas fa-long-arrow-alt-up arrow-up"></i>
+            </a>
+          </h5>
         </div>
       </div>
       <div class="row bg-success pt-2 pt-sm-auto">
-        <div class="col-12 col-sm-8 pt-1">
-          <h6 class="text-center">In the meantime, feel free to hang with me virtually.</h6>
+        <div class="col-8 pt-1">
+          <p class="text-center ">In the meantime, feel free to hang with me virtually.</p>
         </div>
-        <div class="col d-flex justify-content-center">
-          <h4><a href="https://github.com/JohnCalafiore"><i class="fab fa-github text-body"></i></a></h4>
+        <div class="col-2 d-flex justify-content-center">
+          <a href="https://github.com/JohnCalafiore" target="_blank" style="vertical-align: center">
+            <i class="fa fa-circle fa-stack-1x inside" style="color:aliceblue"></i>
+            <i class="fab fa-github fa-stack-1x"></i>
+          </a>
         </div>
-        <div class="col d-flex justify-content-center">
-          <h4><a href="https://www.linkedin.com/in/jcalafiore/"><i class="fab fa-linkedin"></i></a></h4>
+        <div class="col-2 d-flex justify-content-center">
+          <a href="https://www.linkedin.com/in/jcalafiore/" target="_blank" style="vertical-align: center">
+            <i class="fa fa-square fa-stack-1x inside" style="color:aliceblue"></i>
+            <i class="fab fa-linkedin fa-stack-1x"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -115,29 +131,33 @@
     <hr class="mb-0"/>
 
 <!-- About me/copyright -->
-    <div class="container-fluid">
+    <div class="container-fluid mx-1">
     <!-- about me -->
       <div class="row bg-warning">
         <div class="col-12 pt-2">
-          <h5 class="text-success" id="me">about.<b>me</b> | 
-          <a class="text-success" href="#john">back.<b>up </b><i class="fas fa-long-arrow-alt-up"></i></a></h5>
+          <h5 class="text-success" id="me"><span class="title">about.<b>me</b></span>
+            <a class="text-success text-decoration-none return" href="#john">
+              | back.<b>up </b><i class="fas fa-long-arrow-alt-up arrow-up"></i>
+            </a>
+          </h5>
         </div>
       </div>
       <div class="row">
         <div class="col-12 bg-success">
-          <p class="about-me text-left pt-2">
-            <b>Who am I?</b> John...obviously. 😎<br>
-            <b>So what?</b> Right. So, I made this site as a project, but have been interested in learning a programming language for a while now. Thanks to my teachers at Altcademy, I now have a decent understanding of HTML, CSS, Bootstrap, and Git. 🤓 <br>
+          <p class="about-me text-left pt-2 px-3">
+            <b>Who am I?</b> John...obviously.<br>
+            <b>So what?</b> Right. So, I made this site as a project, but have been interested in learning a programming language for a while now. Thanks to my teachers at <a href="https://www.altcademy.com" target="_blank" class="text-body"><span class="link"><u>Altcademy</u></span></a>, I now have a decent understanding of HTML, CSS, Bootstrap, and Git. <br>
             <b>What's next?</b> Well, if you noticed above, I said "The next chapter is JavaScript, and I'm excited!" <br>
-            <b>Anything else?</b> Exploring the mountains of Colorado! ⛰️ <br>
-            <b>More words!</b> OK, calm down! If you want, you can email me at john.r.calafiore@gmail.com and I may or may not respond, depending on my level of sleepiness. 😴</p> 
+            <b>Anything else?</b> Exploring the mountains of Colorado! <br>
+            <b>More words!</b> OK, calm down! If you want, you can email me at <a href="mailto:jcalafiore@gmail.com?Subject=Hello%20World!" class="text-body me-link" ><span class="link"><u>jcalafiore@gmail.com</u></span></a> and I may or may not respond, depending on my level of sleepiness. 
+          </p> 
         </div>
       </div>
 
     <!-- copyright (L) -->
       <div class="row mt-3 mb-0">
         <div class="col">
-          <p class="copyright text-muted small">Copyright © John Calafiore. All Rights Reserved</p>
+          <p class="copyright text-muted small">Copyright © John Calafiore. All Rights Reserved. And Lefts. But Mainly Rights.</p>
         </div>
       </div>
     </div>
